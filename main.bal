@@ -7,7 +7,7 @@ service /api on httpListener {
     // Basic hello world endpoint
     resource function get hello() returns HelloResponse {
         return {
-            message: "Hello World!",
+            message: "Hello World version 01!",
             timestamp: time:utcNow()[0]
         };
     }
